@@ -1,0 +1,23 @@
+/*Program to print pattern like
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5*/
+#include<stdio.h> //header file for printf() 
+#include<conio.h> //header file for clrscr() or getch()
+int main()
+{ 
+ 
+  int i;
+  clrscr(); //to clear previous output of the screen
+  for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+          printf("\t%d",j); 
+        }
+        printf("\n"); //if inner loop false 
+     }
+     return 0; 
+}
